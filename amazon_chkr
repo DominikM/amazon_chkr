@@ -1,0 +1,3 @@
+#!/bin/bash
+
+getent ahostsv4 $1 | awk '{print $1}' | xargs -n1 python projects/amazon_chkr.py
